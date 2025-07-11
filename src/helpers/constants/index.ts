@@ -41,6 +41,14 @@ export const AVAILABLE_TEMPLATES: ITemplate = {
     component: dynamic(() => import('@/templates/professional/ProfessionalTemplate'), {
       ssr: false,
     }),
+  academic: {
+    id: 'academic',
+    name: 'Academic Resume',
+    thumbnail: '/templates/academic.png',
+    component: dynamic(() => import('@/templates/academic/AcademicTemplate'), {
+      ssr: false,
+    }),
+  },
   },
 };
 
